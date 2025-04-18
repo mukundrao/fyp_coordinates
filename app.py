@@ -8,10 +8,16 @@ def get_coordinates():
         "status": "success",
         "count": 1,
         "coordinates": [
-            {"id": 1, "latitude": 0.0, "longitude": 0.0},
+            {
+                "id": 1,
+                "name": "no parking zone 1",
+                "start": [12.9373, 77.5449],
+                "end": [12.9374, 77.5451]
+            }
         ]
     }
     return jsonify(response_data)
 
 if __name__ == "__main__":
     app.run(port=5555, debug=True)
+
